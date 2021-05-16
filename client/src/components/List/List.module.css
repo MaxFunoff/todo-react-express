@@ -1,0 +1,44 @@
+.list {
+	width: 700px;
+	height: auto;
+	border: 1px solid #000;
+	background-color: #fff;
+	margin: 0 auto;
+}
+
+.listHeader {
+	text-align: center;
+	width: 80%;
+	margin: 20px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.listDescription{
+	display: grid;
+	grid-template-columns: var(--grid-todo-list);
+	padding: var(--grid-todo-list-padding);
+	color: #797979;
+}
+.listDescription p {
+	margin: 0;
+}
+.dateButton{
+	cursor: pointer;
+}
+.dateButton:hover{
+	color: #505050;
+}
+
+.listHeader h2 {
+	padding: 0;
+	margin: 0;
+}
+
+.listContent {
+	/* height: 500px; */
+	display: grid;
+	row-gap: 10px;
+}
+

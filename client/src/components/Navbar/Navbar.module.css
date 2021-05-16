@@ -1,0 +1,29 @@
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 25px 0;
+}
+.navbar a{
+	color: #fff;
+	text-decoration: none;
+	
+}
+.navItem{
+	margin: 0 10px;
+	background: var(--primary-blue);
+	padding: 10px 20px;
+	font-size: 20px;
+	font-weight: 400;
+	border-radius: 10px;
+	cursor: pointer;
+}
+:not(.isActive) > .navItem:hover{
+	background: var(--secondary-blue);
+}
+
+.isActive .navItem{
+	outline: 1px solid #fff;
+}
+
+

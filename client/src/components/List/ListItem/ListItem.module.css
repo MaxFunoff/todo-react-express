@@ -1,0 +1,46 @@
+.listItem {
+	padding: var(--grid-todo-list-padding);
+	background-color: #fff;
+	cursor: default;
+	transition: all ease-in 100ms;
+	display: grid;
+	grid-template-columns: var(--grid-todo-list);
+}
+.listItem:hover {
+	background-color: var(--primary-blue);
+	border-color: var(--primary-blue);
+	outline: none;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.0125),
+		0 0 8px rgba(34, 139, 230, 0.5);
+	color: #fff;
+}
+
+.itemTitle {
+	font-size: 20px;
+}
+
+.itemActions {
+	display: flex;
+	justify-content: space-between;
+	opacity: 0;
+	transition: opacity 100ms ease;
+	color: #fff;
+}
+.listItem:hover .itemActions {
+	opacity: 1;
+}
+.itemActions a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.actionItem{
+	cursor: pointer;
+}
+.actionItem:hover{
+	opacity: .5;
+}
+
+.completed .item{
+	text-decoration: line-through;
+}
